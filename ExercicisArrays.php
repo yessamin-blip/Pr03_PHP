@@ -53,7 +53,7 @@
     //---------------------------------------------------------//
 
     // Ejercicio 4
-    // Uso el unset para borrar la ciudad como pedia el ejercicio y var_dump para revisar q este ok
+    // Uso el unset para borrar la ciudad como pedia el ejercicio y var_dump para revisar q este bien
     echo "<h2>Ejercicio 4</h2>";
 
     //Destruye el apartado de ciudad
