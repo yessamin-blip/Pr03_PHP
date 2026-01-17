@@ -92,8 +92,39 @@
     
     $notesAverage = ["Marta" => 10, "Isabel" => 8, "Luís" => 7, "Miguel" => 5, "Aitor" => 4, "Pepe" => 1];
     
+    $count_average = array_sum($notesAverage); // suma los datos 
+
+    $cantidad = count($notesAverage); //cuenta la cantidad de notas
+
+    $average = $count_average / $cantidad;
+
+    //round() para que lo muestre con dos decimales
+    echo "Media de las notas: ". round($average, 2). "<br>";
+
+    echo "Alumnos con nota por encima de la media: <br>";
+
+    foreach($notesAverage as $nombre => $nota){
+
+        if($nota > $average){
+            echo $nombre . "<br>";
+
+        }
+
+    }
+
+     //---------------------------------------------------------//
+
+    echo "<h2>Ejercicio 8</h2>";
+
     
-    
+    $notesAverage = ["Marta" => 10, "Isabel" => 8, "Luís" => 7, "Miguel" => 5, "Aitor" => 4, "Pepe" => 1];
+
+    $max_note = max($notesAverage);
+
+    //con el array_search se usa para buscar un valor especifico dentro del array, que buscas y donde lo buscas
+    $alum_maxNote = array_search($max_note, $notesAverage);
+    echo "La nota más alta es ". $max_note ." y el mejor alumno es ".$alum_maxNote ;
+   
 
     ?>
 </body>
